@@ -1,0 +1,4 @@
+flask
+flask-crontab
+opencv-python
+matplotlib
