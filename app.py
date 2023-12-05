@@ -19,7 +19,7 @@ plt.rcParams["figure.dpi"] = 300
 app = Flask(__name__)
 crontab = Crontab(app)
 
-html_close = "<!DOCTYPE html><html><head><script>window.onload=function(){window.close()};</script></head><body></body></html>"
+html_close = "<!DOCTYPE html><style>body{background-color: black;margin: 0;}</style><html><head><script>window.onload=function(){window.close()};</script></head><body></body></html>"
 
 @crontab.job(minute="*/5")
 def db_update():
